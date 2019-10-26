@@ -12,10 +12,13 @@ public:
     static bool comp(vector<int> &a, vector<int> &b)
     {
         if (a.size() != b.size()) return false;
+        for (vector<int>::size_type i = 0; i< a.size(); i++) {
+            a[i] = a[i]*a[i];
+        }
         std::sort(a.begin(), a.end());
         std::sort(b.begin(), b.end());
         for (vector<int>::size_type i = 0; i< a.size(); i++) {
-            if (a[i] * a[i] != b[i]) {
+            if (a[i] != b[i]) {
                 return false;
             }
         }

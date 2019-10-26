@@ -14,6 +14,8 @@ add_executable(kata_is-a-number-prime kata_is-a-number-prime.cpp)
 add_executable( kata_sum-of-digits-slash-digital-root kata_sum-of-digits-slash-digital-root.cpp)
 add_executable( kata_counting-duplicates kata_counting-duplicates.cpp)
 add_executable( kata_vaporcode kata_vaporcode.cpp)
+add_executable( kata_rot13 kata_rot13.cpp)
+add_executable( kata_pyramid-array kata_pyramid-array.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
